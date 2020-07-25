@@ -1,0 +1,22 @@
+<Project>
+  
+  
+      <Choose>
+        <When Condition="Exists($([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../')))">
+            <PropertyGroup>
+                <Shared_Import_Directory_Build_targets_Path>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</Shared_Import_Directory_Build_targets_Path>
+            </PropertyGroup>
+        </When>
+        <Otherwise>
+            <PropertyGroup>
+                <Shared_Import_Directory_Build_targets_Path>$(MSBuildThisFileDirectory)/Rustle.fmLuWorks.Utilities.Shared/Directory.Build.targets</Shared_Import_Directory_Build_targets_Path>
+            </PropertyGroup>
+        </Otherwise>
+    </Choose>
+
+
+    <Import Project="$(Shared_Import_Directory_Build_targets_Path)"/>
+  
+  
+  
+</Project>

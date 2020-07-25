@@ -1,0 +1,32 @@
+<Project>
+
+  <Choose>
+    <When Condition="Exists($([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')))">
+      <PropertyGroup>
+        <Shared_Import_Directory_Build_props_Path>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</Shared_Import_Directory_Build_props_Path>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <Shared_Import_Directory_Build_props_Path>$(MSBuildThisFileDirectory)/Rustle.fmLuWorks.Utilities.Shared/Directory.Build.props</Shared_Import_Directory_Build_props_Path>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
+  <Import Project="$(Shared_Import_Directory_Build_props_Path)"/>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>Rustle.fmLuWorks.Utilities.Core</Description>
+    <PackageProjectUrl>https://github.com/ZiYuCai1984/Rustle.fmLuWorks.Utilities.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ZiYuCai1984/Rustle.fmLuWorks.Utilities.Core</RepositoryUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Rustle fmLuWorks</PackageTags>
+  </PropertyGroup>
+
+
+</Project>
