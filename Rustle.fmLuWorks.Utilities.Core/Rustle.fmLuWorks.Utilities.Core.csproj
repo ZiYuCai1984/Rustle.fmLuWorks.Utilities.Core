@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.Win32.Registry" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Registry" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<Content Include="../Rustle.fmLuWorks.Utilities.Shared/PackageIcon.png">
-      		<PackagePath>icon.png</PackagePath>
-      		<Link>icon.png</Link>
-    	</Content>
-	</ItemGroup>
+  <ItemGroup>
+    <Content Include="$(fmLuWork_PackageIconPath)">
+      <PackagePath>icon.png</PackagePath>
+      <Link>icon.png</Link>
+    </Content>
+  </ItemGroup>
 
 </Project>

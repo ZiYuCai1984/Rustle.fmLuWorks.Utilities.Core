@@ -25,7 +25,7 @@
     <PackageProjectUrl>https://github.com/ZiYuCai1984/Rustle.fmLuWorks.Utilities.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ZiYuCai1984/Rustle.fmLuWorks.Utilities.Core</RepositoryUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageTags>Rustle fmLuWorks</PackageTags>
+    <PackageTags>fmLuWorks</PackageTags>
   </PropertyGroup>
 
 
