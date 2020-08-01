@@ -20,6 +20,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B92440
 		Rustle.fmLuWorks.Utilities.Shared\PackageIcon.png = Rustle.fmLuWorks.Utilities.Shared\PackageIcon.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{1B419BF4-AEAC-4ACC-800D-5987F59A4C9A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\blank.yml = .github\workflows\blank.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
